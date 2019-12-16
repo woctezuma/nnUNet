@@ -49,6 +49,7 @@ try:
     # different systems (and our compute cluster). You can replace this line with something like:
     # preprocessing_output_dir = "/path/to/my/folder_with_preprocessed_data"
     preprocessing_output_dir = "/content/nnUNet_preprocessed/"
+    maybe_mkdir_p(preprocessing_output_dir)
 except KeyError:
     preprocessing_output_dir = None
 
